@@ -1,0 +1,57 @@
+body {background: #011627}
+
+main {
+  div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+
+    .cardList {
+      border-radius: 3px;
+      background: #FDFFFC;
+      color: #011627;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      height: 100%;
+      padding: 1rem;
+      margin: 1rem;
+      list-style: none;
+      overflow: hidden;
+      box-shadow: 0 0 15px #FF0022;
+
+      .cardLabel, .cardImage, .cardCalories {max-width: 90%}
+
+      .cardImage {padding: .5rem 0 .5rem;}
+
+      .cardCalories {padding-bottom: .5rem;}
+
+      .cardIngredients {
+
+        button {
+          background: #011627;
+          padding: .5rem;
+          border-radius: 3px;
+          border: 2px solid #FF0022;
+          transition: all .3s;
+          box-shadow: 0 0 15px black;
+
+          a {
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            color: #FDFFFC;
+          }
+        }
+
+        button:hover {
+          transform: rotateX(-10deg) rotateY(10deg);
+        }
+      }
+    }
+  }
+}
